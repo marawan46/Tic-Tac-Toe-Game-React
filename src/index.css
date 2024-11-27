@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  background-color: #424242;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+/* Reset and Base Styling */
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+h1, p {
+  margin: 0;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/* Game Wrapper */
+.game {
+  display: flex;
+  gap: 40px;
+  background-color: #252424;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 76%);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* Game Board */
+.game-board {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.board{
+  align-self: center;
+}
+/* Squares */
+.square {
+  width: 80px;
+  height: 80px;
+  background-color: #e0e0e0;
+  border: 2px solid #bdbdbd;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #424242;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s, transform 0.2s;
+}
+.State{
+  background-color: azure;
+  border: 2px solid #3bf2ca;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  color: #65afff;
+  font-size: 2em;
+  text-align: center;
+  font-family: "Cherry Bomb One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+
+}
+.square:hover {
+  background-color: #d4edda;
+  transform: scale(1.05);
+}
+.square.selected{
+  background-color: #124fa6;
+  transform: scale(1.05);
+}
+.board-row {
+  display: flex;
+
+}
+
+.mode-picker {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  max-width: 300px;
+}
+.white-text{
+  color: #fff;
+}
+.mode{
+  padding: 5px;
+  background: antiquewhite;
+  border-radius: 5px;
+}
+.mode-picker label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.mode-picker input[type="radio"] {
+  margin-right: 8px;
+}
+
+.mode-picker input[type="submit"] {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.mode-picker input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+.mode-picker input[type="submit"]:active {
+  background-color: #08e643;
+}
+
+
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
