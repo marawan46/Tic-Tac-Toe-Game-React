@@ -65,15 +65,3 @@ Checks if the game ends in a draw.
    npm start
    ```
 4. Open your browser and navigate to `http://localhost:3000`.
-
----
-
-## Future Improvements
-
-- Implement additional game modes (e.g., single-player with AI).
-- Add animations for better user experience.
-- Improve UI for mobile responsiveness.
-
----
-
-Feel free to modify the sections to suit your specific project!
